@@ -106,8 +106,8 @@ int main(int argc, char **argv) {
 						y1_move = SDL_JoystickGetAxis(stick, 1);				
 						x2_move = SDL_JoystickGetAxis(stick, 2);				
 						y2_move = SDL_JoystickGetAxis(stick, 3);				
-						heave_up = SDL_JoystickGetButton(stick, 4) * 40;
-						heave_down = SDL_JoystickGetButton(stick, 5) * 40 * -1;
+						heave_up = SDL_JoystickGetButton(stick, 4) * 60;
+						heave_down = SDL_JoystickGetButton(stick, 5) * 60 * -1;
 					
 						surge_starboard = -1 * (y2_move * (100.0/32768.0));
 						surge_port = -1 * (y1_move * (100.0/32768.0));
